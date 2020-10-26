@@ -19,4 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('diary.urls')),
+    # accounts/~というURLへのアクセスに対しdjango-allauthが持つurls.pyに処理を渡す
+    path('accounts/', include('allauth.urls')),
 ]
