@@ -48,3 +48,6 @@ LOGGING = {
         },
     }
 }
+
+# アップロードされた静的ファイルの保存場所
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
